@@ -9,3 +9,14 @@ enum class I18nType{
         return "${strList.first().lowercase()}_${strList.last()}"
     }
 }
+enum class ModType{
+    NATIVE,
+    CET,
+    ARCHIVE,
+    REDSCRIPT,
+    RED4EXT;
+
+    override fun toString(): String {
+        return super.toString().lowercase()
+    }
+}
