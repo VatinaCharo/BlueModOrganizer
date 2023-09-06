@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ee42cc6-fc5f-4c84-9914-0fde352c30f0" name="Changes" comment="chore:remove workspace.xml in .idea">
+    <list default="true" id="6ee42cc6-fc5f-4c84-9914-0fde352c30f0" name="Changes" comment="style(build.gradle):移除idea烦人的警告">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +134,7 @@
       <updated>1693879668447</updated>
       <workItem from="1693879669390" duration="6422000" />
       <workItem from="1693886207534" duration="6010000" />
-      <workItem from="1693974677020" duration="207000" />
+      <workItem from="1693974677020" duration="762000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -167,7 +168,31 @@
       <option name="project" value="LOCAL" />
       <updated>1693974818861</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="chore:remove workspace.xml in .idea">
+      <option name="closed" value="true" />
+      <created>1693974907299</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693974907299</updated>
+    </task>
+    <task id="LOCAL-00006" summary="style(build.gradle)">
+      <option name="closed" value="true" />
+      <created>1693974961982</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693974961982</updated>
+    </task>
+    <task id="LOCAL-00007" summary="style(build.gradle):移除idea烦人的警告">
+      <option name="closed" value="true" />
+      <created>1693975104589</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693975104589</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +204,8 @@
     <MESSAGE value="new:I18n" />
     <MESSAGE value="new(Database):Mod Entry" />
     <MESSAGE value="chore:remove workspace.xml in .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore:remove workspace.xml in .idea" />
+    <MESSAGE value="style(build.gradle)" />
+    <MESSAGE value="style(build.gradle):移除idea烦人的警告" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(build.gradle):移除idea烦人的警告" />
   </component>
 </project>
