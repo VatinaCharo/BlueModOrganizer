@@ -4,30 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ee42cc6-fc5f-4c84-9914-0fde352c30f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ElementFX-1.3-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/nju/eur3ka/bmo/BMOController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/nju/eur3ka/bmo/Data.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/nju/eur3ka/bmo/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/nju/eur3ka/bmo/TextTransform.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/nju/eur3ka/bmo/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/nju/eur3ka/bmo/lang/zh_CN.lang" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/nju/eur3ka/bmo/TextTransformTest.kt" afterDir="false" />
+    <list default="true" id="6ee42cc6-fc5f-4c84-9914-0fde352c30f0" name="Changes" comment="new(Database):Mod Entry">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,8 +69,8 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/nju30/IdeaProjects/BlueModOrganizer/lib",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/nju30/IdeaProjects/BlueModOrganizer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -154,8 +133,34 @@
       <option name="presentableId" value="Default" />
       <updated>1693879668447</updated>
       <workItem from="1693879669390" duration="6422000" />
-      <workItem from="1693886207534" duration="5446000" />
+      <workItem from="1693886207534" duration="6010000" />
+      <workItem from="1693974677020" duration="52000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1693894421800</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693894421800</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new:I18n">
+      <option name="closed" value="true" />
+      <created>1693894554591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693894554591</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new(Database):Mod Entry">
+      <option name="closed" value="true" />
+      <created>1693894597344</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693894597344</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,5 +168,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <MESSAGE value="new:I18n" />
+    <MESSAGE value="new(Database):Mod Entry" />
+    <option name="LAST_COMMIT_MESSAGE" value="new(Database):Mod Entry" />
   </component>
 </project>
