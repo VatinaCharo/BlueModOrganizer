@@ -1,3 +1,5 @@
+//file:noinspection GroovyAccessibility
+//file:noinspection GroovyAssignabilityCheck
 plugins {
   id 'java'
   id 'application'
