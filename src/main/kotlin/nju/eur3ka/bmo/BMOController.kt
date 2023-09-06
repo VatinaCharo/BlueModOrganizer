@@ -1,6 +1,7 @@
 package nju.eur3ka.bmo
 
 import javafx.scene.control.Button
+import javafx.scene.control.TableColumn
 import javafx.scene.control.TableView
 import javafx.scene.control.ToolBar
 import javafx.scene.layout.HBox
@@ -14,5 +15,4 @@ object BMOController {
     val mainHBox = HBox()
     val modVBox = VBox()
     val modToolBar = ToolBar()
-    val modTableView = TableView<ModEntry>()
 }
