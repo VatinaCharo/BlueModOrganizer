@@ -21,7 +21,7 @@ class ModArchive(file: File) {
     ).simpleInterface.archiveItems.filter { !it.isFolder }.sortedBy { it.path }
     val isEmpty = modArchiveItemList.isEmpty()
 
-    fun readModArchiveItemTree(): TreeItem<String> {
+    fun readModArchiveItemTree(): CheckBoxTreeItem<String> {
         val rootModArchiveItemTreeNode = CheckBoxTreeItem(name, FontIcon(MaterialDesignZ.ZIP_BOX))
         var indexTreeItem = rootModArchiveItemTreeNode
         if (isEmpty) return rootModArchiveItemTreeNode
@@ -45,6 +45,7 @@ class ModArchive(file: File) {
                     indexTreeItem = childTreeItem
                 }
                 // add file leaf
+//                indexTreeItem.children.add(CheckBoxTreeItem(path.name, ICONS.getFileIconByFileExtension(path.extension)))
                 indexTreeItem.children.add(CheckBoxTreeItem(path.name, ICONS.getFileIconByFileExtension(path.extension)))
                 indexTreeItem = rootModArchiveItemTreeNode
             }

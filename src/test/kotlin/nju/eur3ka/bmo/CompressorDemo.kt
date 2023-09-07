@@ -3,15 +3,15 @@ package nju.eur3ka.bmo
 import javafx.application.Application
 import javafx.scene.Scene
 import javafx.scene.control.CheckBoxTreeItem
+import javafx.scene.control.TreeCell
 import javafx.scene.control.TreeView
 import javafx.scene.control.cell.CheckBoxTreeCell
 import javafx.stage.Stage
+import javafx.util.Callback
 import net.sf.sevenzipjbinding.SevenZip
 import net.sf.sevenzipjbinding.impl.RandomAccessFileInStream
 import java.io.File
 import java.io.RandomAccessFile
-import kotlin.io.path.Path
-import kotlin.io.path.name
 import kotlin.test.Test
 
 object CompressorDemo {
