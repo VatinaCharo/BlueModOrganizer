@@ -14,7 +14,8 @@ enum class ModType{
     CET,
     ARCHIVE,
     REDSCRIPT,
-    RED4EXT;
+    RED4EXT,
+    OTHER;
 
     override fun toString(): String {
         return super.toString().lowercase()

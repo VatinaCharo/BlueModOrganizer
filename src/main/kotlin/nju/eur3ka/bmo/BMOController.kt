@@ -4,6 +4,8 @@ import javafx.scene.control.Button
 import javafx.scene.control.TableColumn
 import javafx.scene.control.TableView
 import javafx.scene.control.ToolBar
+import javafx.scene.control.TreeItem
+import javafx.scene.control.TreeView
 import javafx.scene.layout.HBox
 import javafx.scene.layout.VBox
 
@@ -15,4 +17,6 @@ object BMOController {
     val mainHBox = HBox()
     val modVBox = VBox()
     val modToolBar = ToolBar()
+
+    var modArchiveItemTreeView = TreeView<String>()
 }
