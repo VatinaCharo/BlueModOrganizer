@@ -13,6 +13,11 @@ object ICONS {
     // .md .txt
     val txtIcon = FontIcon(MaterialDesignF.FILE_DOCUMENT)
     val presetFileIcon = FontIcon(MaterialDesignF.FINGERPRINT)
+//    val zipIcon = ImageView(ICONS::class.java.getResource("icons/icon_archive_cfg_50.png")!!.toExternalForm())
+//    val folderIcon = ImageView(ICONS::class.java.getResource("icons/icon_folder_50.png")!!.toExternalForm())
+//    val fileIcon = ImageView(ICONS::class.java.getResource("icons/icon_file_50.png")!!.toExternalForm())
+//    val txtIcon = ImageView(ICONS::class.java.getResource("icons/icon_txt_50.png")!!.toExternalForm())
+//    val presetFileIcon = ImageView(ICONS::class.java.getResource("icons/icon_preset_50.png")!!.toExternalForm())
     val archiveFileIcon = FontIcon(MaterialDesignF.FILE_MULTIPLE)
     // .xl .yml .json .ini .toml .xml
     val cfgFileIcon = FontIcon(MaterialDesignF.FILE_COG)
@@ -25,12 +30,12 @@ object ICONS {
     val exeIcon = FontIcon(MaterialDesignP.PLAY_BOX)
     val dllIcon = FontIcon(MaterialDesignP.PUZZLE)
     fun getFileIconByFileExtension(fileExtensionName:String)= when(fileExtensionName.lowercase()){
-        "zip" -> zipIcon
-        "rar" -> zipIcon
-        "7z" -> zipIcon
-        "md" -> txtIcon
-        "txt" -> txtIcon
-        "preset" -> presetFileIcon
-        else -> fileIcon
+        "zip" -> FontIcon(MaterialDesignZ.ZIP_BOX)
+        "rar" -> FontIcon(MaterialDesignZ.ZIP_BOX)
+        "7z" -> FontIcon(MaterialDesignZ.ZIP_BOX)
+        "md" -> FontIcon(MaterialDesignF.FILE_DOCUMENT)
+        "txt" -> FontIcon(MaterialDesignF.FILE_DOCUMENT)
+        "preset" -> FontIcon(MaterialDesignF.FINGERPRINT)
+        else -> FontIcon(MaterialDesignF.FILE)
     }
 }

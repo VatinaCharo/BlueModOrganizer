@@ -4,6 +4,9 @@ import javafx.scene.control.CheckBoxTreeItem
 import javafx.scene.control.TreeItem
 import net.sf.sevenzipjbinding.SevenZip
 import net.sf.sevenzipjbinding.impl.RandomAccessFileInStream
+import org.kordamp.ikonli.javafx.FontIcon
+import org.kordamp.ikonli.materialdesign2.MaterialDesignF
+import org.kordamp.ikonli.materialdesign2.MaterialDesignZ
 import java.io.File
 import java.io.RandomAccessFile
 import kotlin.io.path.Path
@@ -19,7 +22,7 @@ class ModArchive(file: File) {
     val isEmpty = modArchiveItemList.isEmpty()
 
     fun readModArchiveItemTree(): TreeItem<String> {
-        val rootModArchiveItemTreeNode = CheckBoxTreeItem(name, ICONS.zipIcon)
+        val rootModArchiveItemTreeNode = CheckBoxTreeItem(name, FontIcon(MaterialDesignZ.ZIP_BOX))
         var indexTreeItem = rootModArchiveItemTreeNode
         if (isEmpty) return rootModArchiveItemTreeNode
         modArchiveItemList.forEach { archiveItem ->
@@ -37,7 +40,7 @@ class ModArchive(file: File) {
                         indexTreeItem = mayExistChildTreeItem as CheckBoxTreeItem<String>
                         continue
                     }
-                    val childTreeItem = CheckBoxTreeItem(folder.name, ICONS.folderIcon)
+                    val childTreeItem = CheckBoxTreeItem(folder.name, FontIcon(MaterialDesignF.FOLDER))
                     indexTreeItem.children.add(childTreeItem)
                     indexTreeItem = childTreeItem
                 }
