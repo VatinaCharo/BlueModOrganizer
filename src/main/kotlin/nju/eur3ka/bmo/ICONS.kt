@@ -19,7 +19,7 @@ object ICONS {
 //    val txtIcon = ImageView(ICONS::class.java.getResource("icons/icon_txt_50.png")!!.toExternalForm())
 //    val presetFileIcon = ImageView(ICONS::class.java.getResource("icons/icon_preset_50.png")!!.toExternalForm())
     val archiveFileIcon = FontIcon(MaterialDesignF.FILE_MULTIPLE)
-    // .xl .yml .json .ini .toml .xml
+    // .xl .yaml .json .ini .toml .xml
     val cfgFileIcon = FontIcon(MaterialDesignF.FILE_COG)
     // .sqlite3 .kark
     val databaseIcon = FontIcon(MaterialDesignD.DATABASE)
