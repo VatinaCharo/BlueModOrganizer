@@ -17,14 +17,14 @@ class ModArchive(file: File) {
         .sortedBy { if(Path(it.path).nameCount==1) "1" else "0" + it.path } // 按照通常的文件管理器中的顺序来排序
 
     fun buildModArchiveItemTree(): BMOFileTreeNode {
-        val rootModArchiveItemTreeNode = BMOFileTreeNode(name)
+        val rootModArchiveItemTreeNode = BMOFileTreeNode(name, null)
         if (modArchiveItemList.isEmpty()) return rootModArchiveItemTreeNode
         var indexTreeItem = rootModArchiveItemTreeNode
         modArchiveItemList.forEach { archiveItem ->
             val path = Path(archiveItem.path)
             if (path.nameCount == 1) {
                 // add single file leaf
-                indexTreeItem.children.add(BMOFileTreeNode(path.name))
+                indexTreeItem.children.add(BMOFileTreeNode(path.name, indexTreeItem))
             } else {
                 // add folder node
                 for (pos in 0 until path.nameCount - 1) {
@@ -35,12 +35,12 @@ class ModArchive(file: File) {
                         indexTreeItem = mayExistChildTreeItem
                         continue
                     }
-                    val childTreeItem = BMOFileTreeNode(folder.name)
+                    val childTreeItem = BMOFileTreeNode(folder.name, indexTreeItem)
                     indexTreeItem.children.add(childTreeItem)
                     indexTreeItem = childTreeItem
                 }
                 // add file leaf
-                indexTreeItem.children.add(BMOFileTreeNode(path.name))
+                indexTreeItem.children.add(BMOFileTreeNode(path.name, indexTreeItem))
                 indexTreeItem = rootModArchiveItemTreeNode
             }
         }

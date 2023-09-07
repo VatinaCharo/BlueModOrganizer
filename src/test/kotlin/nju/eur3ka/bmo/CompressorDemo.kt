@@ -1,7 +1,11 @@
 package nju.eur3ka.bmo
 
+import ink.bluecloud.css.CssResources
 import javafx.application.Application
 import javafx.scene.Scene
+import javafx.scene.control.Button
+import javafx.scene.control.ScrollPane
+import javafx.scene.layout.VBox
 import javafx.stage.Stage
 import net.sf.sevenzipjbinding.SevenZip
 import net.sf.sevenzipjbinding.impl.RandomAccessFileInStream
@@ -31,15 +35,25 @@ object CompressorDemo {
     }
     class ReadZipDemoApp:Application() {
         override fun start(primaryStage: Stage) {
-            val modArchive = ModArchive(File(rarTestFileURL.toURI()))
+            val modArchive = ModArchive(File(complexZipTestFileURL.toURI()))
             val tree = modArchive.buildModArchiveItemTree()
-            tree.format("")
             tree.getDFSNodeList().forEach {
-                println(it.prefix + it.name)
+                println(it.prefix + it.name + "[${it.count()}]")
+            }
+            val debugBtn = Button("debug")
+            val modTreeView = BMOTreeView(tree)
+            val root = VBox()
+            val scrollPane = ScrollPane(modTreeView.build())
+            root.children.addAll(debugBtn, scrollPane)
+            debugBtn.setOnAction {
+                println(modTreeView.getSelectedFileNameList())
             }
             primaryStage.run {
                 title = "readZip Demo"
-                scene = Scene(BMOTreeView(modArchive.buildModArchiveItemTree()).build())
+                scene = Scene(root).apply {
+                    stylesheets.add(CssResources.globalCssFile)
+                }
+                height = 600.0
                 show()
             }
         }
