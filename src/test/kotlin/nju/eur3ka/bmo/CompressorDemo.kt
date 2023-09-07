@@ -1,20 +1,10 @@
 package nju.eur3ka.bmo
 
 import javafx.application.Application
-import javafx.scene.Group
 import javafx.scene.Scene
-import javafx.scene.control.Button
-import javafx.scene.control.CheckBoxTreeItem
-import javafx.scene.control.TreeView
-import javafx.scene.control.cell.CheckBoxTreeCell
-import javafx.scene.layout.HBox
-import javafx.scene.layout.VBox
 import javafx.stage.Stage
 import net.sf.sevenzipjbinding.SevenZip
 import net.sf.sevenzipjbinding.impl.RandomAccessFileInStream
-import org.kordamp.ikonli.javafx.FontIcon
-import org.kordamp.ikonli.materialdesign2.MaterialDesignF
-import org.kordamp.ikonli.materialdesign2.MaterialDesignZ
 import java.io.File
 import java.io.RandomAccessFile
 import kotlin.test.Test
@@ -42,8 +32,10 @@ object CompressorDemo {
     class ReadZipDemoApp:Application() {
         override fun start(primaryStage: Stage) {
             val modArchive = ModArchive(File(rarTestFileURL.toURI()))
-            modArchive.buildModArchiveItemTree().getDFSNodeList().forEach {
-                println("  ".repeat(it.layer) + it.name)
+            val tree = modArchive.buildModArchiveItemTree()
+            tree.format("")
+            tree.getDFSNodeList().forEach {
+                println(it.prefix + it.name)
             }
             primaryStage.run {
                 title = "readZip Demo"

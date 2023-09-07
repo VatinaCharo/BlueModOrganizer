@@ -12,14 +12,15 @@ import kotlin.io.path.extension
 class BMOTreeView(val bmoTree:BMOFileTreeNode){
     fun build():VBox{
         val tree = VBox(10.0).apply {
-            val lines = bmoTree.getDFSNodeList().map {
+            val dfsList = bmoTree.getDFSNodeList()
+            val lines = dfsList.map {
                 HBox(10.0).apply {
                     val icon =
                         if (it.children.isEmpty())
                             ICONS.getFileIconByFileExtension(Path(it.name).extension)
                         else
                             FontIcon(MaterialDesignF.FOLDER)
-                    children.addAll(Label("  ".repeat(it.layer)), icon, Label(it.name))
+                    children.addAll(Label(it.prefix), icon, Label(it.name))
                 }
             }
             lines.first().children[1] = FontIcon(MaterialDesignZ.ZIP_BOX)
