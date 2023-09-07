@@ -45,7 +45,6 @@ class ModArchive(file: File) {
                     indexTreeItem = childTreeItem
                 }
                 // add file leaf
-//                indexTreeItem.children.add(CheckBoxTreeItem(path.name, ICONS.getFileIconByFileExtension(path.extension)))
                 indexTreeItem.children.add(CheckBoxTreeItem(path.name, ICONS.getFileIconByFileExtension(path.extension)))
                 indexTreeItem = rootModArchiveItemTreeNode
             }
