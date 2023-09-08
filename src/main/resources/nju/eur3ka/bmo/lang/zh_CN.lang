@@ -1,1 +1,17 @@
+# 语言文件命名遵循通用命名规范
+# 即“语种_地区.lang”
+# 其中要求地区为大小标识
+# 比如：zh_CN.lang en_US.lang
+#
+# 主界面
 button.profile=档案
+button.setting=设置
+button.saves=存档
+button.backup=备份
+button.search=搜索
+numtracker.modactivated=MOD激活数
+numtracker.mod=MOD数
+numtracker.archive=archive文件数
+# mod 安装界面
+button.modarchive.install=安装
+button.modarchive.cancel=取消
