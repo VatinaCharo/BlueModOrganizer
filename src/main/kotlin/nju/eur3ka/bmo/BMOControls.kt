@@ -1,5 +1,6 @@
 package nju.eur3ka.bmo
 
+import javafx.beans.property.SimpleIntegerProperty
 import javafx.collections.MapChangeListener
 import javafx.scene.control.Label
 import javafx.scene.layout.HBox
@@ -87,4 +88,13 @@ class BMOTreeView(private val bmoTree: BMOFileTreeNode) {
         .filter { it.children.isEmpty() } // 筛选文件节点，去除文件夹节点
         .filter { it.checkBox.isSelected } // 检查是否被选择
         .map { it.name }
+}
+class NumTracker(val name:String):Label(){
+    val num = SimpleIntegerProperty(0,"num")
+    init {
+        text = "$name: ${num.value}"
+        num.addListener { _, _, _ ->
+            text = "$name: ${num.value}"
+        }
+    }
 }
