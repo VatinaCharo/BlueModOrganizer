@@ -7,10 +7,10 @@ import javafx.scene.control.CheckBox
  *
  * @property modName
  * @property typeList
- * @property version
+ * @property path
  * @constructor Create empty Mod entry
  */
-data class ModEntry(val modName: String, val typeList: List<ModType>, val version: String)
+data class ModEntry(val modName: String, val typeList: List<ModType>, val path: String)
 
 /**
  * BMO file tree node
